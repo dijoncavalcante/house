@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.teste.dijon.teste.vwNovoProduto">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewprimeiro_paragrafo"
+        android:text="@string/primeiro_paragrafo"
+        android:layout_centerHorizontal="true"/>
+
+<!--     bloco abaixo de nome do produto -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewnovo_nome_produto"
+        android:text="@string/informe_nome"
+        android:layout_below="@+id/textViewprimeiro_paragrafo"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/textViewnovo_nome_produto"
+        android:id="@+id/editTextNomeProduto"
+        android:hint="@string/informe_nome"
+        android:maxLength="60"/>
+
+    <!--     bloco abaixo de valor do produto -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewvalorProduto"
+        android:text="@string/informe_valor"
+        android:layout_below="@+id/editTextNomeProduto"
+       />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewvalorProduto"
+        android:hint="@string/informe_valor_hint"
+        android:id="@+id/editTextValorProduto"
+        android:maxLength="7"/>
+
+    <!--     bloco abaixo de descricao do produto -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewdescricao_produto"
+        android:text="@string/informe_descricao_produto"
+        android:layout_below="@+id/editTextValorProduto"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewdescricao_produto"
+        android:hint="@string/hint_informe_descricao_produto"
+        android:id="@+id/editTextDescricaoProduto"
+        android:maxLength="60"/>
+
+    <!--     bloco abaixo do tamanho do produto -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewTamanhoProduto"
+        android:layout_below="@+id/editTextDescricaoProduto"
+        android:text="@string/informe_tamanho_produto"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextTamanhoProduto"
+        android:layout_below="@+id/textViewTamanhoProduto"
+        android:hint="@string/hint_informe_tamanho_produto"
+        android:maxLength="60"/>
+
+    <!--     espaco -->
+    <!--     espaco -->
+    <!--     espaco -->
+    <!--     espaco -->
+    <!--     espaco -->
+    <!--     espaco -->
+    <!--     espaco -->
+</RelativeLayout>

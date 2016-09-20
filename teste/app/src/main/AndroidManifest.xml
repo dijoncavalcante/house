@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.teste.dijon.teste">
+
+    <!-- android:icon="@mipmap/ic_launcher" -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/house_72x72"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".vwNovoProduto"
+            android:label="@string/title_activity_vw_novo_produto"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="PARENT_ACTIVITY"
+                android:value=".MainActivity"
+                />
+        </activity>
+        <activity
+            android:name=".ManterFornecedorActivity"
+            android:label="@string/buttonManterFornecedor"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="PARENT_ACTIVITY"
+                android:value=".MainActivity"
+                />
+        </activity>
+        <activity
+            android:name=".vwProduto"
+            android:label="@string/title_activity_vw_produto">
+            <!--android:parentActivityName=".MainActivity">
+            <meta-data
+               android:name="android.support.v7" ></meta-data>-->
+            </activity>
+
+        <activity
+            android:name=".VW_Fornecedor"
+            android:label="@string/title_activity_vw_novo_fornecedor"
+            android:parentActivityName=".ManterFornecedorActivity" >
+            <meta-data
+                android:name="PARENT_ACTIVITY"
+                android:value=".ManterFornecedorActivity"
+            />
+        </activity>
+        <activity
+            android:name=".VWConsultaFornecedorActivity"
+            android:label="@string/title_activity_vw_consulta_fornecedor"
+            android:parentActivityName=".ManterFornecedorActivity">
+            <meta-data
+                android:name="PARENT_ACTIVITY"
+                android:value=".ManterFornecedorActivity"
+                />
+        </activity>
+
+    </application>
+
+</manifest>

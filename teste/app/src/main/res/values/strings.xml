@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">House</string>
+    <string name="action_settings">Settings</string>
+    <string name="configuracao">Configuração</string>
+    <string name="projetoHouse">Projeto House</string>
+    <!-- comentario -->
+    <!-- Paginas xml's -->
+
+
+    <!-- activity_main.xml inicio-->
+    <string name="manter_produto">Produto</string>
+    <string name="buttonManterFornecedor">Fornecedor</string>
+    <string name="estoque">          Estoque         </string>
+    <string name="lista_de_compras"> Lista</string>
+    <string name="relatorio">        Relatório       </string>
+    <string name="title_activity_vw_produto">Produto</string>
+    <string name="novo">Novo</string>
+    <string name="title_activity_vw_novo_produto">Novo Produto</string>
+    <string name="title_activity_vw_novo_fornecedor">Novo Forncedor</string>
+    <!-- activity_main.xml fim-->
+
+    <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-->
+
+    <!--   activity_vw_novo_produto inicio-->
+    <string name="primeiro_paragrafo">Informe abaixo as características do produto.</string>
+    <string name="informe_nome">Nome</string>
+    <string name="informe_valor">Preço</string>
+    <string name="informe_valor_hint">0,00</string>
+    <string name="informe_descricao_produto"> Descrição</string>
+    <string name="hint_informe_descricao_produto">Arroz branco...</string>
+    <string name="informe_tamanho_produto">Tamanho</string>
+    <string-array name="SpinnerTamanhoProduto">
+        <item>Pequeno</item>
+        <item>Médio</item>
+        <item>Grande</item>
+        <item>Normal</item>
+        <item>Tamanho Único</item>
+        <item>Indeterminado</item>
+    </string-array>
+    <string name="fornecedor">Fornecedor</string>
+    <string name="ativo">Ativo</string>
+    <string name="hint_informe_tamanho_produto">Pequeno, Grande....</string>
+    <string-array name="spinnerTipoProduto">
+        <item>Remédio</item>
+        <item>Pet</item>
+        <item>Comida</item>
+        <item>Limpeza</item>
+    </string-array>
+    <string name="remedio">Remédio</string>
+    <string name="pet">Pet</string>
+    <string name="comida">Comida</string>
+    <string name="limpeza">Limpeza</string>
+    <string name="salvar">Salvar</string>
+
+    <string name="toogle_on">Ativo</string>
+    <string name="toogle_of">Inativo</string>
+    <!--   activity_vw_novo_produto fim-->
+
+    <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-->
+
+    <!--   activity_vw_novo_fornecedor inicio-->
+    <string name="primeiro_paragrafo_vw_nvo_fornecedor">Informe os campos para o novo Fornecedor</string>
+    <string name="endereco">Endereço</string>
+
+    <!--   activity_vw_novo_fornecedor fim-->
+
+    <!--VWConsultaFornecedorActivity inicio-->
+    <string name="title_activity_vw_consulta_fornecedor">Fornecedores</string>
+    <string name="novo_fornecedor">Novo</string>
+    <string name="Consultar">Consultar</string>
+    <!--VWConsultaFornecedorActivity fim   -->
+</resources>

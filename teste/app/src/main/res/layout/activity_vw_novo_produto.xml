@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.teste.dijon.teste.vwNovoProduto">
+
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewprimeiro_paragrafo"
+        android:text="@string/primeiro_paragrafo"
+        android:layout_centerHorizontal="true"    />
+    <EditText
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextNomeProduto"
+        android:layout_below="@+id/textViewprimeiro_paragrafo"
+        android:hint="@string/informe_nome"
+        android:focusable="true"
+        android:maxLength="60"
+        />
+    <EditText
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextNomeProduto"
+        android:hint="@string/informe_valor"
+        android:id="@+id/editTextValorProduto"
+        android:maxLength="7"
+        android:inputType="numberDecimal"/>
+    <EditText
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextValorProduto"
+        android:hint="@string/informe_descricao_produto"
+        android:id="@+id/editTextDescricaoProduto"
+        android:maxLength="60"/>
+    <EditText
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextTamanhoProduto"
+        android:layout_below="@+id/editTextDescricaoProduto"
+        android:hint="@string/informe_tamanho_produto"
+        android:maxLength="60"/>
+    <!--     vendedor -->
+    <EditText
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextVendedor"
+        android:layout_below="@+id/editTextTamanhoProduto"
+        android:hint="@string/fornecedor"
+        android:maxLength="60"/>
+
+    <!--ToggleButton Ativo-->
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toggleButtonAtivo"
+        android:textOn="@string/toogle_on"
+        android:textOff="@string/toogle_of"
+        android:visibility="visible"
+        android:layout_below="@+id/editTextVendedor"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp"
+        android:checked="true" />
+    <!--Spinner Tipo do Produto-->
+    <Spinner
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/spinnerTipoProduto"
+        android:layout_below="@+id/toggleButtonAtivo"
+        />
+
+    <!--     Bottão Salvar -->
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/buttonSalvar"
+        android:text="@string/salvar"
+        android:layout_marginTop="49dp"
+        android:layout_below="@+id/spinnerTipoProduto"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
